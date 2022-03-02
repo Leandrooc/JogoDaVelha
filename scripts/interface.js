@@ -50,25 +50,10 @@ function handleClick(event) {
             board = ['', '', '', '', '', '', '', '', '',]
             gameOver = false
             playerTime = 0
-            let a = document.getElementById("0")
-            let b = document.getElementById("1")
-            let c = document.getElementById("2")
-            let d = document.getElementById("3")
-            let e = document.getElementById("4")
-            let f = document.getElementById("5")
-            let g = document.getElementById("6")
-            let h = document.getElementById("7")
-            let i = document.getElementById("8")
-            a.innerHTML = `<div class=''></div>`
-            b.innerHTML = `<div class=''></div>`
-            c.innerHTML = `<div class=''></div>`
-            d.innerHTML = `<div class=''></div>`
-            e.innerHTML = `<div class=''></div>`
-            f.innerHTML = `<div class=''></div>`
-            g.innerHTML = `<div class=''></div>`
-            h.innerHTML = `<div class=''></div>`
-            i.innerHTML = `<div class=''></div>`
-
+            const squareIndex = 9
+            for(let i = 0; i < squareIndex; i++) {
+                document.getElementById(i).innerHTML = `<div class=''></div>`
+            }
 
         }, 10);
 
@@ -85,24 +70,10 @@ function handleClick(event) {
                  board = ['', '', '', '', '', '', '', '', '',]
                  gameOver = false
                  playerTime = 0
-                 let a = document.getElementById("0")
-                 let b = document.getElementById("1")
-                 let c = document.getElementById("2")
-                 let d = document.getElementById("3")
-                 let e = document.getElementById("4")
-                 let f = document.getElementById("5")
-                 let g = document.getElementById("6")
-                 let h = document.getElementById("7")
-                 let i = document.getElementById("8")
-                 a.innerHTML = `<div class=''></div>`
-                 b.innerHTML = `<div class=''></div>`
-                 c.innerHTML = `<div class=''></div>`
-                 d.innerHTML = `<div class=''></div>`
-                 e.innerHTML = `<div class=''></div>`
-                 f.innerHTML = `<div class=''></div>`
-                 g.innerHTML = `<div class=''></div>`
-                 h.innerHTML = `<div class=''></div>`
-                 i.innerHTML = `<div class=''></div>` 
+                 const squareIndex = 9
+                 for(let i = 0; i < squareIndex; i++) {
+                    document.getElementById(i).innerHTML = `<div class=''></div>`
+                }
 
     }
 
